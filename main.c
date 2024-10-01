@@ -5,7 +5,7 @@
 #include <string.h>
 #include "my_tree.h"
 int main (){
-    struct Tree* tree = (struct Tree*) malloc(sizeof(struct Tree));
+    struct Tree* tree = newTree();
     labelTree(tree, "Tree");
 
     struct Tree* branch1 = newTree();
