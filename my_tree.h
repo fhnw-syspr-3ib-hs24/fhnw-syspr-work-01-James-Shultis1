@@ -14,4 +14,5 @@ void addRightBranch(struct Tree*, struct Tree*);
 void labelTree(struct Tree*, char*);
 void print(struct Tree*, char*);
 void destroy(struct Tree*);
+struct Tree* newTree();
 #endif //FHNW_SYSPR_WORK_01_JAMES_SHULTIS1_MY_TREE_H

@@ -30,6 +30,13 @@ void print(struct Tree* tree, char* prefix){
 
 }
 
+struct Tree* newTree(){
+    struct Tree* tree = (struct Tree*) malloc(sizeof(struct Tree));
+    tree->left = NULL;
+    tree->right = NULL;
+    return tree;
+}
+
 void destroy(struct Tree* parent){
     if(parent->right){
         destroy(parent->right);
